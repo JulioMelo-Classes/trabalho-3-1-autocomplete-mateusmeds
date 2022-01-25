@@ -94,6 +94,22 @@ Neste segundo exemplo, a base de dados é `wiktionary.txt` e a string buscada fo
 
 Note que o programa não deve ser **case sensitive**. Ou seja, não deve fazer diferença se o usuário digita "São P", "são p", "SÃO P",  ou qualquer variação de maiúscula ou minúscula. A entrada do usuário deve ser convertida para um case qualquer (todas maiúsculas ou todas minúsculas), para facilitar a operação de busca na base de dados.
 
+# Feedback Checkin 1
+
+1. Projete ao menos as 3 classes principais propostas para o programa. Não precisa implementar, apenas os .h são suficientes. **75%**
+    - Faltou a classe que deve guardar o resultado da busca
+
+2. Implemente a classe responsável por ler e armazenar as informações do banco de dados de entrada. **ok**
+    - Ok, acho que vc poderia já ter ordenado após a leitura dos dados.
+
+3. Escreva o main instanciando a do item 2 mostrando que ela funciona para carregar e armazenar as informações. **ok**
+    - ok    
+
+4. Escreva parte da classe responsável pela interface com o usuário, de forma que o usuário consiga ao menos digitar a alguma palavra no loop principa, mostrando uma interface similar à interface sugerida na atividade 3.1. **ok**
+    - Blz, mas realmente não precisava passar o stdin/stdou como vc fez, era só fazer cin/cout dentro da interface.
+
+5. Use a classe implementada em 4 no main, para mostrar que ela funciona. Não precisa realizar qualquer busca no banco, se a entrada do usuário estiver sendo recebida e impressa no terminal já conta para esse checkin. **ok**
+
 # Autorship
 
 The description of this programming assignment was taken from [Computer Sciecne at Pricenton University](http://introcs.cs.princeton.edu/java/assignments/autocomplete.html).
