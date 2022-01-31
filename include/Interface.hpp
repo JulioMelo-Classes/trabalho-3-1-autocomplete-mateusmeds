@@ -21,7 +21,7 @@ class Interface {
         /**
          * Imprime a mensagem que aparece para o usuário como resultado da pesquisa
          */
-        std::string printMatchMessage();
+        std::string printResponseMessage();
 
         /**
          * Imprime as posíveis sentenças que combinam com a pesquisa do usuário

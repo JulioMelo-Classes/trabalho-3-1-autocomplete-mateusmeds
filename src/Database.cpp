@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <algorithm> 
 
 #include "Database.hpp"
 
@@ -11,6 +12,10 @@ Database::Database(string databaseFile) {
     this->setDatabase();
 }
 
+//Referência: https://www.geeksforgeeks.org/sorting-vector-of-pairs-in-c-set-1-sort-by-first-and-second/
+bool Database::sortBySentence(pair<int, string> &p1, pair<int, string> &p2) {
+    return (p1.second < p2.second);
+}
 
 void Database::setDatabase() {
     fstream file(databaseFile);
@@ -36,7 +41,11 @@ void Database::setDatabase() {
         this->sentences.push_back(tempValue);
     }
 
+    sort(this->sentences.begin(), this->sentences.end(), sortBySentence);
+
+    //Apagar
     // for (auto teste : this->sentences) {
     //     cout << teste.first << "|" << teste.second << "|" <<endl;
     // }
 }
+

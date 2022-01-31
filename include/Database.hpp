@@ -20,6 +20,8 @@ class Database {
          */
         void setDatabase();
 
+        static bool sortBySentence(std::pair<int, std::string> &p1, std::pair<int, std::string> &p2);
+
     public:
 
         Database(std::string databaseFile);
