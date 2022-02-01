@@ -1,13 +1,16 @@
 .DEFAULT_GOAL := all
 
 #quando adicionar uma nova dependencia não esqueça de atualizar aqui!
-OBJECTS=build/Database.o build/Interface.o
+OBJECTS=build/Database.o build/Interface.o build/Request.o
 
 build/Database.o: src/Database.cpp include/Database.hpp
 	g++ -Iinclude src/Database.cpp -c -o build/Database.o
 
 build/Interface.o: src/Interface.cpp include/Interface.hpp
 	g++ -Iinclude src/Interface.cpp -c -o build/Interface.o
+
+build/Request.o: src/Request.cpp include/Request.hpp
+	g++ -Iinclude src/Request.cpp -c -o build/Request.o
 
 #para adicionar novas regras apenas siga o formato
 #build/usuario.o: src/usuario.cpp include/usuario.h
